@@ -1,4 +1,4 @@
-from Sorting.sort import *
+from sorts import *
 import random
 from time import time
 for i in range(1, 9):
@@ -7,19 +7,19 @@ for i in range(1, 9):
     arr = l
     print("Number of elements:", n)
     start_time = time()
-    bubble_sorted_list = bubblesort(l.copy())
+    bubble_sorted_list = bubble_sort(l.copy())
     print("Bubble sort time:", time() - start_time)
     start_time = time()
-    insertion_sorted_list = insertionsort(l.copy())
+    insertion_sorted_list = insertion_sort(l.copy())
     print("Insertion sort time:", time() - start_time)
     start_time = time()
-    selection_sorted_list = selectionsort(l.copy())
+    selection_sorted_list = selection_sort(l.copy())
     print("Selection sort time:", time() - start_time)
     start_time = time()
     sorted_list = sorted(l.copy())
     print("Sorted time:", time() - start_time)
     start_time = time()
-    merge_sorted_list = mergeSort(l.copy())
+    merge_sorted_list = partition(l.copy())
     print("Merge sort time:", time() - start_time)
     start_time = time()
     low=0
